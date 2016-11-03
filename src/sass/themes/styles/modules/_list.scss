@@ -1,0 +1,100 @@
+.m-lst {
+  .item {
+    //@include display-flex;
+    padding: 30px $contextSpace;
+    border-bottom: 2px solid $gray-lighter;
+    &:first-child {
+      border-top: 2px solid $gray-lighter;
+    }
+    &:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    &-vi { /*view*/
+      float: left;
+      width: 100px;
+      @media (min-width: $screen-sm-min) {
+        width: 21%;
+      }
+
+      &>.vi-img {
+        display: block;
+        width:100%;
+        &:after {
+          display: block;
+          content: '';
+          height: 0;
+          padding-top: 100%;
+        }
+      }
+    }
+    &-ct {
+      margin-left: 110px;
+      padding: 0 $contextSpace;
+      @media (min-width: $screen-sm-min) {
+        margin-left: 22%;
+      }
+
+      &>.ct-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 20px;
+        @media (min-width: $screen-sm-min) {
+          margin-bottom: 30px;
+          font-size: 22px;
+        }
+        &>a {
+          color: $gray;
+        }
+      }
+      &>.ct-container {
+        .unit {
+          position: relative;
+          min-height: 20px;
+          margin-bottom: 6px;
+          padding-left: 90px;
+          font-size: 14px;
+          line-height: 20px;
+          color: $gray-light;
+          &>span {
+            position: absolute;
+            left: 0;
+            font-size: 15px;
+            color: $gray-dark;
+          }
+
+          @media (min-width: $screen-sm-min) {
+            min-height: 22px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 22px;
+            &>span {
+              font-size: 16px;
+            }
+          }
+        }
+        &>.special>.unit {
+          padding-left: 60px;
+        }
+
+        @media (min-width: $screen-sm-min) {
+          position: relative;
+          &>.special {
+            position: absolute;
+            right:0;
+            bottom:-10px;
+          }
+        }
+      }
+    }
+  }
+
+  .none {
+    min-height: 300px;
+    border-top: 2px solid $gray-lighter;
+    border-bottom: 2px solid $gray-lighter;
+    font-size: 20px;
+  }
+}

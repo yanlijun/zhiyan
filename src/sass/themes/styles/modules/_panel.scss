@@ -1,0 +1,10 @@
+.m-pnl {
+  &-hd,
+  &-bd,
+  &-ft {
+    padding: $gridSpace;
+  }
+  &-hd {
+    position: relative;
+  }
+}

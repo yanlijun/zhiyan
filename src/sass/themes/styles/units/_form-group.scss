@@ -1,0 +1,107 @@
+.u-fm {
+  &-file,
+  &-ipt, /*other input*/
+  &-grp {
+    margin-bottom: $gridSpace;
+
+    & + .u-tips {
+      margin-top: -$contextSpace;
+
+      & + .u-tips {
+        margin-top: -$contextSpace;
+      }
+    }
+  }
+
+  &-ipt:not([class*=u-rc]),
+  &-grp:not([class*=u-rc]) {
+    border-radius: 2px;
+  }
+
+  &-file {
+    &,
+    .image.show {
+      display: inline-block;
+    }
+    input,
+    .image {
+      display: none;
+    }
+    .image,
+    .u-ico {
+      width: 100px;
+      height: 100px;
+    }
+    .image {
+      margin-right: $contextSpace;
+      vertical-align: middle;
+    }
+    .u-ico {
+      border: 1px solid $grayInputBorder;
+      background-color: $grayUltraLight;
+      background-size: 40% 40%;
+      cursor: pointer;
+    }
+  }
+  &-ipt {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    color: #1e1e1e;
+  }
+  &-grp {
+    display: table;
+    overflow: hidden;
+    border: 1px solid $grayInputBorder;
+    background-color: $white;
+
+    input,
+    button,
+    select,
+    textarea {
+      border: none;
+    }
+
+    .u-fm-ipt,
+    .u-fm-add { /*for button, icon or text*/
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .u-fm-ipt {
+      margin-bottom: 0;
+    }
+    .u-fm-add {
+      width: 1%;
+      padding-right: 8px;
+      padding-left: 8px;
+      white-space: nowrap;
+
+      .u-ico,
+      .u-btn {
+        vertical-align: initial;
+      }
+      .u-btn {
+        min-width: 80px;
+        margin: -8px;
+        padding: 8px;
+      }
+      &:first-child {
+        border-right: 1px solid $grayInputBorder;
+      }
+      &:last-child {
+        border-left: 1px solid $grayInputBorder;
+      }
+    }
+  }
+
+  .m-fd {
+    li {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      label {
+        line-height: $baseFontSize * $baseLineHeight + 16px + 2px;
+      }
+    }
+  }
+}

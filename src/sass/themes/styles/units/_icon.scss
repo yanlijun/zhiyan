@@ -1,0 +1,34 @@
+@import "compass/utilities/sprites";
+
+.u-ico {
+  display: inline-block;
+  text-indent: -9999px;
+  vertical-align: middle;
+
+  &-play {
+    border-width: 12px 0 12px 24px;
+    border-style: solid;
+    border-color: transparent #fff;
+  }
+  &-pause {
+    width: 24px;
+    height: 24px;
+    border-width: 0 7px;
+    border-style: solid;
+    border-color: #fff;
+  }
+
+  &-plus {
+    @include background(linear-gradient(0deg, transparent 39%, $gray-lighter 40%, $gray-lighter 62%, transparent 63%),
+            linear-gradient(90deg, transparent 39%, $gray-lighter 40%, $gray-lighter 62%, transparent 63%));
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+$u-ico-spacing: 25px;
+$u-ico-position: 50%;
+$u-ico-sprite-dimensions: ture;
+@import "u-ico/*.png";
+@include all-u-ico-sprites;
+

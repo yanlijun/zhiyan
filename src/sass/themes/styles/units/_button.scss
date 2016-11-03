@@ -1,0 +1,44 @@
+.u-btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.u-btn + .u-btn {
+  //margin-left: 20px;
+}
+.u-btn:hover {
+  text-decoration: none;
+}
+.u-btn-s {
+  padding: 4px 12px;
+  font-size: 13px;
+}
+.u-btn-m {
+  padding: 6px 16px;
+  font-size: 15px;
+}
+.u-btn-l {
+  padding: 8px 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.u-btn-xl {
+  padding: 12px 28px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.u-btn-welt {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  -webkit-border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.u-btn-ol { /*outline*/
+  border: 1px solid;
+  background-color: transparent;
+}

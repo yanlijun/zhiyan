@@ -1,0 +1,86 @@
+.charts {
+
+  &-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  &-container {
+    display: inline-block;
+    position: relative;
+    max-width: 88%;
+  }
+  &-avatar {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  &-main {
+    margin-left: 64px;
+  }
+  &-from {
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: $gray-dark;
+    text-shadow: 0 0 1px rgba(0,0,0,.3);
+    &>span {
+      margin-right: 10px;
+    }
+  }
+  &-content {
+    position: relative;
+    background-color: $gray-ultra;
+    border-radius: 5px;
+  }
+  &-corner {
+    position: absolute;
+    top: 10px;
+    left: -12px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent $gray-ultra transparent transparent;
+  }
+  &-content p {
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  &-list li.right {
+    text-align: right;
+  }
+  &-list li.right &-avatar {
+    right: 0;
+  }
+  &-list li.right &-main {
+    margin-right: 64px;
+    margin-left: 0;
+  }
+  &-list li.right &-from {
+    &>span {
+      float: right;
+      margin-right: 0;
+      margin-left: 10px;
+    }
+    &:after {
+      display: block;
+      clear: both;
+      content: ' ';
+    }
+  }
+  &-list li.right &-content {
+    background-color: $brand-danger;
+    color: #fff;
+  }
+  &-list li.right &-corner {
+    right: -12px;
+    left: auto;
+    border-color: transparent transparent transparent $brand-danger;
+  }
+
+}

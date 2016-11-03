@@ -1,0 +1,155 @@
+// slide custom simple style
+.m-sld {
+  &-tt {
+    position: relative;
+    z-index: 9;
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 16px;
+    }
+    &.general {
+      h2 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+  @media (min-width: 360px) {
+    &-tt {
+      h2 {
+        font-size: 48px;
+      }
+      p {
+        font-size: 20px;
+      }
+      &.general {
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    &-tt {
+      h2 {
+        font-size: 68px;
+      }
+      p {
+        font-size: 25px;
+      }
+      &.general {
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+
+//// complete component
+//.m-sld {
+//  position: relative;
+//  padding-top: 50%;
+//}
+//.m-sld-inn, /*inner*/
+//.m-sld-inn>.item {
+//  position: absolute;
+//  top: 0;
+//  width: 100%;
+//}
+//.m-sld-inn,
+//.m-sld-inn>.item,
+//.m-sld-inn>.item .s-bg-cov {
+//  height: 100%;
+//  overflow: hidden;
+//}
+//.m-sld-inn>.item {
+//  left: 100%;
+//}
+//.m-sld-inn>.item .s-bg-cov {
+//  width: 100%;
+//}
+//.m-sld-inn>.item[data-link] {
+//  cursor: pointer;
+//}
+//.m-sld-inn>.item img {
+//  max-width: 100%;
+//  -webkit-user-select: none;
+//  -moz-user-select: none;
+//  -ms-user-select: none;
+//  user-select: none;
+//  pointer-events: none;
+//}
+//.m-sld-inn .crt {
+//  left: 0;
+//  z-index: 3;
+//}
+//.m-sld-inn .next {
+//  z-index: 6;
+//}
+//.m-sld-ind { /*indicators*/
+//  position: absolute;
+//  right: 0;
+//  bottom: 0;
+//  left: 0;
+//  z-index: 9;
+//  height: 12px;
+//  font-size: 0;
+//  line-height: 18px;
+//  text-align: center;
+//}
+//.m-sld-ind li {
+//  display: inline-block;
+//  width: 6px;
+//  height: 6px;
+//  margin: 0 4px;
+//  background-color: #fff;
+//  opacity: .4;
+//}
+//.m-sld-ind li.crt {
+//  opacity: .8;
+//}
+//@media (min-width: 640px) {
+//  .m-sld-ind {
+//    height: 20px;
+//    line-height: 28px;
+//  }
+//  .m-sld-ind li {
+//    width: 8px;
+//    height: 8px;
+//  }
+//  .m-sld-ctr { /*control*/
+//    position: absolute;
+//    top: 50%;
+//    z-index: 9;
+//    width: 50px;
+//    height: 80px;
+//    margin-top: -40px;
+//    border-radius: 4px;
+//    background: rgba(255, 255, 255, .3) no-repeat center;
+//    background-size: auto 60%;
+//    transition: background-color .3s linear;
+//  }
+//  .m-sld-ctr:hover {
+//    background-color: rgba(255, 255, 255, .4);
+//  }
+//  .m-sld-ctr.left {
+//    left: 4%;
+//    background-image: url('../../images/square-left.png');
+//  }
+//  .m-sld-ctr.right {
+//    right: 4%;
+//    background-image: url('../../images/square-right.png');
+//  }
+//}

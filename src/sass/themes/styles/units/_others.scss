@@ -1,0 +1,196 @@
+/********* Hs *********/
+.u-h1 {
+  font-size: 54px;
+  letter-spacing: 10px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.u-h2 {
+  font-size: 38px;
+  letter-spacing: 6px;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+.u-h3 {
+  font-size: 28px;
+  letter-spacing: 3px;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+.u-h4 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.u-h5 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.u-h6 {
+  font-size: 15px;
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+/********* Radius Corner *********/
+.u-rc-xs,
+.u-rc-sm,
+.u-rc-md,
+.u-rc-lg {
+  overflow: hidden;
+}
+.u-rc-xs {
+  border-radius:3px;
+}
+.u-rc-sm {
+  border-radius:5px;
+}
+.u-rc-md {
+  border-radius:8px;
+}
+.u-rc-lg {
+  border-radius:12px;
+}
+
+/********* Middle *********/
+.u-mid {
+  display: table;
+  @extend %width-full;
+  height: 100%;
+  &-ct { /*content*/
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+///********* Center *********/
+//.u-center {
+//  @extend %display-flex;
+//  @include justify-content(center);
+//  @include align-items(center);
+//}
+
+///********* Around & Between *********/
+//.u-around {
+//  @extend %display-flex;
+//  @include justify-content(space-around);
+//}
+//.u-between {
+//  @extend %display-flex;
+//  @include justify-content(space-between);
+//}
+
+/********* Shadow *********/
+.u-shadow {
+  box-shadow: 0 2px 3px rgba(0,0,0,.3);
+}
+
+/********* Corner *********/
+.u-corner {
+  border-style: solid;
+  border-color: transparent;
+}
+
+/********* Amount *********/
+.u-amount {
+  display: inline-block;
+  margin-right: $gridSpace;
+  &-ipt { // input
+    // none
+  }
+  &-btn {
+    position: relative;
+    &:before {
+      content: '.';
+      font-size: 0;
+    }
+  }
+  &-inc,
+  &-dec {
+    position: absolute;
+    &:before {
+      display: block;
+      text-align: center;
+      width: $contextSpace;
+    }
+  }
+  &-inc { // increase
+    top: -$contextSpace;
+    &:before {
+      content: '+';
+    }
+  }
+  &-dec { // decrease
+    bottom: -$contextSpace;
+    &:before {
+      content: '-';
+    }
+  }
+  &-unit {
+    // none
+  }
+}
+
+/********* Corner note *********/
+.u-cnn {
+  &,
+  &>i {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  z-index: 9;
+  color: #fff;
+  //@include background(linear-gradient(-135deg, $color-danger, $color-danger 50%, transparent 50%));
+  &>i {
+    z-index: -1;
+    border-style: solid;
+    border-color: transparent;
+  }
+}
+
+///********* Sub *********/
+//.u-super,
+//.u-sub {
+//  padding: 2px 4px;
+//}
+//.u-super {
+//  vertical-align: text-top;
+//}
+//.u-sub {
+//  vertical-align: text-bottom;
+//}
+
+/********* Platoon *********/
+.u-plat {
+  padding: 15px;
+  border-bottom: 1px solid $gray-light;
+  &:first-child {
+    border-top: 1px solid $gray-light;
+  }
+}
+
+/********* News *********/
+.u-nws {
+  img {
+    max-width:100%;
+    margin-bottom: $gridSpace;
+  }
+  @media (min-width: $screen-md-min) {
+    p {
+      font-size: $baseFontSize + 1;
+      text-indent: $baseFontSize * 2;
+      line-height: $baseLineHeight * 1.5;
+    }
+  }
+}

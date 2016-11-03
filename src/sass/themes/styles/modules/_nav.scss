@@ -1,0 +1,27 @@
+.m-nav,
+.m-nav a {
+  color: $grayLight;
+}
+.m-nav {
+    width: 80%;
+  font-size: 0;
+}
+.m-nav li {
+  display: inline;
+}
+.m-nav li i {
+  font-style: normal;
+}
+.m-nav li a {
+  display: inline-block;
+  margin-left: $contextSpace;
+  padding: $contextSpace 0;
+  font-size: 15px;
+}
+.m-nav li:last-child a {
+  margin-right: $contextSpace;
+}
+.m-nav a:hover,
+.m-nav li.sel a {
+  color: $white;
+}

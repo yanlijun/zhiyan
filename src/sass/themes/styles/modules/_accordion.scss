@@ -1,0 +1,38 @@
+.m-acc-tt,
+.m-acc-ct {
+  border-top: 1px solid #9fa0a0;
+}
+.m-acc-tt {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.m-acc-tt.sel,
+.m-acc-tt:hover {
+  background-color: #efefef;
+}
+.m-acc-tt i {
+  float: right;
+  width: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  color: #c8c8c8;
+}
+.m-acc-tt i:after {
+  content: '+';
+}
+.m-acc-tt.sel i:after {
+  content: '-';
+}
+.m-acc-ct {
+  display: none;
+  padding: 10px 20px;
+}
+.m-acc-ct p {
+  margin: 10px 0;
+}
+.m-acc-tt.sel + .m-acc-ct {
+  display: block;
+}

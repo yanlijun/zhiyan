@@ -1,0 +1,13 @@
+.u-pages {
+  margin: 15px 0;
+  font-size: 0;
+  text-align: center;
+}
+.u-pages li {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 16px;
+}
+.u-pages li.sel a {
+  color: #007dff;
+}

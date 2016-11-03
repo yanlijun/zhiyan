@@ -1,0 +1,126 @@
+.m-dl {
+  margin-bottom: 0;
+  padding: 20px;
+  &>dt {
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  &>dd {
+    margin-bottom: 20px;
+    &.last {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+      text-indent: 28px;
+    }
+  }
+
+  @media (min-width: $screen-xs-min) {
+    &:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+    &>dt {
+      position: relative;
+      float: left;
+      width: 30%;
+      padding-top: 40%; //37.756%;
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+    &>dd {
+      margin-left: 30%;
+      padding-left: 20px;
+      h4 {
+        margin-top: 0;
+      }
+    }
+    &.right {
+      &>dt {
+        float: right;
+      }
+      &>dd {
+        margin-right: 30%;
+        margin-left: 0;
+        padding-right: 20px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    &>dt {
+      width: 24%;
+      padding-top: 30.20487804878049%;
+    }
+    &>dd {
+      margin-left: 24%;
+    }
+    &.right {
+      &>dd {
+        margin-right: 24%;
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+
+
+.m-dls {
+  dl {
+    margin-bottom: 45px;
+    dt {
+      margin-bottom: $contextSpace;
+    }
+  }
+  &.left {
+    text-align: left;
+  }
+  &.right {
+    text-align: right;
+  }
+  &.indent {
+    dl {
+      dt, dd {
+        position: relative;
+        padding-left: 10%;
+        .to-left {
+          position: absolute;
+          left: 0;
+          width:10%;
+          text-align: center;
+          line-height: $baseLineHeight;
+        }
+      }
+      dt {
+        font-weight: normal;
+        font-size: 19px;
+        .iconfont {
+          font-size: inherit;
+          line-height: $baseLineHeight;
+        }
+      }
+      dd {
+        font-size: 15px;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        dt {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

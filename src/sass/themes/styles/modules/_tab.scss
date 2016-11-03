@@ -1,0 +1,50 @@
+.m-tab {
+  &-opt {
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 0;
+    li {
+      display: inline-block;
+      margin: 0 $gridSpace $gridSpace;
+      a {
+        padding: 4px 8px;
+        font-size: 20px;
+        color: $gray;
+        border-radius: 3px;
+      }
+      a:hover,
+      &.active a {
+        background-color: $brand-danger;
+        color: #fff;
+      }
+    }
+
+    &.rectangle {
+      a {
+        background-color: $gray-lighter;
+        border-left: 1px solid $gray-lighter;
+      }
+      li {
+        margin-right: 0;
+        margin-left: 0;
+        a {
+          padding: 8px 30px;
+          font-size: 18px;
+          border-radius: 0;
+        }
+        &:first-child a {
+          border-left: none;
+        }
+      }
+    }
+  }
+  &-cnt {
+    .item { /*container*/
+      display: none;
+      padding: $gridSpace 0;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

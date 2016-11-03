@@ -1,0 +1,16 @@
+/*
+%display-flex {
+  //display: inline-block; !*non-flexbox browsers*!
+  @include display-flex;
+}
+%grid-min-width {
+  min-width: 320px; //800
+}
+%grid-max-width {
+  max-width: 1000px;
+}
+*/
+
+%width-full {
+  width: 100%;
+}

@@ -1,0 +1,77 @@
+//// color
+//$white: #fff;
+//$black: #333;
+//$grayDark: #666;
+//$gray: #999;
+//$grayLight: #ddd;
+//$red: #e5493a;
+//$redLight: #d4471b;
+//$orange: #ff7d00;
+//$orangeLight: #f78e10;
+//$green: #35b74b;
+//$greenLight: #25e245;
+//$yellow: #d28d09;
+//$yellowLight: #e89d0f;
+//$blueDark: #1b1e6b;
+//$blue: #3b42e3;
+//$blueLight: #0099cc;
+//
+//
+//$color-primary:         #337ab7;
+//$color-success:         #5cb85c;
+//$color-info:            #5bc0de;
+//$color-warning:         #f0ad4e;
+//$color-danger:          #d9534f;
+//
+//$state-success:         #3c763d;
+//$state-info:            #31708f;
+//$state-warning:         #8a6d3b;
+//$state-danger:          #a94442;
+//// other color
+//$grayUltraLight: lighten($black, 76%);
+//$grayInputBorder: lighten($black, 60%);
+
+
+
+
+// the main colors of new version
+$gray-darker:            #202020;
+$gray-dark:              #2d2d2d;
+$gray:                   #555555;
+$gray-light:             #a3a3a3;
+$gray-lighter:           #dfdfdf;
+$gray-ultra:             #f4f4f4;
+$gray-border:            lighten($gray-light, 13.5%);
+
+$brand-primary:         #2b90d9; //#428bca;
+$brand-success:         #5cb85c;
+$brand-info:            #5accec;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #ce3d3a;
+
+$hover-primary:         #428bca;
+$hover-success:         #4aa84a;
+$hover-info:            #30a9de;
+$hover-warning:         #f29209;
+$hover-danger:          #b53533;
+
+
+// base
+$baseFontSize: 14px;
+$baseLineHeight: 1.42857143;
+// space
+$gridSpace: 15px;
+$contextSpace: 10px;
+
+// @media min-width
+$screen-xxxs-min: 360px;
+$screen-xxs-min: 480px;
+$screen-xs-min: 568px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xl-min: 1366px;
+
+$container-sm: 750px;
+$container-md: 970px;
+$container-lg: 1170px;

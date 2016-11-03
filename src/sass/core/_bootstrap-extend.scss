@@ -1,0 +1,95 @@
+.btn-outline {
+  color: inherit;
+  background-color: transparent;
+  //transition: all .5s;
+
+  &.btn-primary {
+    color: $brand-primary;
+  }
+  &.btn-success {
+    color: $brand-success;
+  }
+  &.btn-info {
+    color: $brand-info;
+  }
+  &.btn-warning {
+    color: $brand-warning;
+  }
+  &.btn-danger {
+    color: $brand-danger;
+  }
+
+  &.btn-primary:hover,
+  &.btn-success:hover,
+  &.btn-info:hover,
+  &.btn-warning:hover,
+  &.btn-danger:hover {
+    color: #fff;
+  }
+}
+.table-disabled {
+  &, a {
+    color: #efefef;
+  }
+  &>thead>tr>th,
+  &>thead>tr>td,
+  &>tbody>tr>th,
+  &>tbody>tr>td,
+  &>tfoot>tr>th,
+  &>tfoot>tr>td {
+    border-color: #efefef;
+  }
+}
+.table-scroll {
+  max-height: 192px;
+  min-height: 144px;
+  overflow: auto;
+  .table {
+    margin-bottom: 0;
+    &>:first-child {
+      tr:first-child {
+        th, td {
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+.table-nesting {
+  margin: -8px;
+  &>table {
+    margin-bottom: 0;
+    &>tbody>tr {
+      &:first-child>td {
+        border-top: none;
+      }
+      &>td {
+        border-left: 1px solid $table-border-color;
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+  }
+}
+
+.form-buttons {
+  .btn {
+    margin-bottom: 15px;
+    margin-right: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: $gray-dark;
+}
+.text-important {
+  color: $brand-danger;
+}

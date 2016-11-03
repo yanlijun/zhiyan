@@ -1,0 +1,30 @@
+{
+  "name": "ZhiYan",
+  "version": "1.0.0",
+  "description": "ZHIYANFAZHAN Official Website.",
+  "homepage": "http://www.cn2fire.com/",
+  "authors": "Kevin Yan",
+  "license": "MIT",
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "css",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "main": [
+    "src/*"
+  ],
+  "ignore": [
+    "**/.*",
+    "test",
+    "Gemfile"
+  ],
+  "dependencies": {
+    "jquery": "1.x",
+    "bootstrap-sass": "^3.3.0",
+    "html5shiv": ">=3.7.0",
+    "respond": ">=1.4.0"
+  }
+}

@@ -1,0 +1,84 @@
+
+.f-fl { // float left
+  float: left;
+}
+.f-fr { // float right
+  float: right;
+}
+.f-wh { // width half
+  width: 50%;
+}
+.f-wf { // width full
+  @extend %width-full;
+}
+.f-db { // display block
+  display: block;
+}
+.f-ib { // display inline-block
+  display: inline-block;
+}
+.f-dn { // display none
+  display: none;
+}
+.f-m0 {
+  margin: 0!important;
+}
+.f-p0 {
+  padding: 0!important;
+}
+.f-b0 {
+  border: none!important;
+}
+.f-tal { // text align left
+  text-align: left!important;
+}
+.f-tac { // text align center
+  text-align: center!important;
+}
+.f-tar { // text align right
+  text-align: right!important;
+}
+.f-tul { // text underline
+  text-decoration: underline;
+}
+.f-tba { // text break all
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.f-tka { // text keep all
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: keep-all;
+}
+.f-toe { // text overflow ellipsis
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.f-es-xs { // empty space X small
+  height: 5px;
+}
+.f-es-sm { // empty space small
+  height: 15px;
+}
+.f-es-md { // empty space middle
+  height: 30px;
+}
+.f-es-lg { // empty space large
+  height: 45px;
+}
+.f-sr-only { // screen reader only
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+.f-cf:after { // clear fix
+  display: block;
+  visibility: hidden;
+  content: '';
+  clear: both;
+  height: 0;
+}

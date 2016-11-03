@@ -1,0 +1,277 @@
+.m-sbs {
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 0;
+  list-style: none;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: $gridSpace;
+    font-size: $baseFontSize + 1;
+    vertical-align: top;
+    &>a:first-child {
+      display: block;
+      img {
+        max-width: 100%;
+      }
+    }
+    &>strong,
+    &>p {
+      margin-top: 20px;
+      font-size: 12px;
+    }
+    &>strong {
+      display: block;
+      font-size: $baseFontSize + 3;
+      color: $gray-dark;
+    }
+    &>p {
+      text-align: left;
+    }
+  }
+
+  &-two,
+  &-three,
+  &-four,
+  &-five {
+    li {
+      width: 88%;
+      @media (min-width: $screen-sm-min) {
+        max-width: 40%;
+      }
+    }
+  }
+  &-two {
+    li {
+      @media (min-width: $screen-xxs-min) {
+        max-width: 36%;
+      }
+    }
+  }
+  &-three {
+    li {
+      @media (min-width: $screen-xxs-min) {
+        max-width: 36%;
+      }
+      @media (min-width: $screen-xs-min) {
+        max-width: 27%;
+      }
+    }
+  }
+  &-four {
+    li {
+      @media (min-width: $screen-xxs-min) {
+        max-width: 40%;
+      }
+      @media (min-width: $screen-md-min) {
+        max-width: 21%;
+      }
+    }
+    &.sbs-small li {
+      max-width: 36%;
+      @media (min-width: $screen-xs-min) {
+        max-width: 19%;
+      }
+    }
+  }
+  &-five {
+    li {
+      width: 40%;
+      @media (min-width: $screen-xxs-min) {
+        max-width: 26%;
+      }
+      @media (min-width: $screen-xs-min) {
+        max-width: 19%;
+      }
+      @media (min-width: $screen-md-min) {
+        max-width: 14%;
+      }
+    }
+  }
+
+  &-box {
+    li {
+      padding: $contextSpace;
+      border: 1px solid $gray-lighter;
+      &>a:first-child {
+        margin: (-$contextSpace - 1) (-$contextSpace - 1) 0;
+      }
+    }
+  }
+  &-simple {
+    li {
+      &>strong {
+        font-weight: normal;
+      }
+    }
+  }
+
+  &.select-card,
+  &.select-bank,
+  &.show-card {
+    text-align: left;
+  }
+  &.select-card {
+    padding-top: 1px;
+    padding-left: 1px;
+    li {
+      //width: 25%;
+      margin: -1px 0 0 -1px;
+      border: 1px solid $gray-lighter;
+      &>label {
+        display: block;
+        margin-bottom: 0;
+        padding: $contextSpace 20px;
+        text-align: center;
+        cursor: pointer;
+        &>input {
+          position: absolute;
+          left: -1000px;
+          // ie8 not support both
+          //visibility: hidden;
+          //display: none;
+        }
+        &.checked,
+        &:hover {
+          background-color: $brand-primary;
+          color: #fff;
+        }
+
+        &.disabled {
+          cursor: not-allowed;
+          &,
+          &:hover {
+            background-color: $gray-ultra;
+            color: $gray-light;
+          }
+        }
+      }
+    }
+  }
+  &.select-bank {
+    li {
+      margin-right: 5px;
+      margin-left: 5px;
+      &>label {
+        cursor: pointer;
+        &>input {
+          vertical-align: middle;
+        }
+        .u-ico {
+          border:1px solid $gray-lighter;
+        }
+        &.checked,
+        &:hover {
+          .u-ico {
+            border-color: $gray-light;
+          }
+        }
+
+        &.disabled {
+          cursor: not-allowed;
+          &,
+          &:hover {
+            .u-ico {
+              border-color: $gray-lighter;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.rectangle {
+    li {
+      min-width: 100px;
+      margin-right: $contextSpace;
+      margin-left: $contextSpace;
+      padding: 8px $contextSpace;
+      border: 1px dashed $gray-lighter;
+      &.active {
+        border-style: solid;
+        color: $brand-primary;
+      }
+    }
+  }
+  &.show-card {
+    border-top: 1px solid $gray-lighter;
+    li {
+      position: relative;
+      width: 96%;
+      margin: 2%;
+      @media (min-width: $screen-xs-min) {
+        width: 45.333333%;
+      }
+      @media (min-width: $screen-sm-min) {
+        width: 29.333333%;
+      }
+
+      .u-cnn {
+        &>i {
+          border-width: 34px;
+          border-top-color: $brand-danger;
+          border-right-color: $brand-danger;
+        }
+        &>span {
+          display: block;
+          padding-top: $contextSpace;
+          padding-right: 4px;
+          font-size: 18px;
+        }
+      }
+
+      .card-title {
+        margin-top: $contextSpace;
+      }
+
+      .card-body {
+        padding: $contextSpace 0;
+        font-size: 14px;
+        &>p {
+          position: relative;
+          margin-bottom: 6px;
+          padding-top: 4px;
+          padding-left: 62px;
+          font-size: 12px;
+          &.long-text {
+            min-height: 80px;
+          }
+          &.last {
+            padding-left: 76px;
+          }
+          &>b {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: normal;
+            font-size: 15px;
+          }
+          &>span {
+            display: inline-block;
+          }
+        }
+      }
+
+      .card-foot {
+        margin-right: -$contextSpace;
+        margin-bottom: -$contextSpace;
+        margin-left: -$contextSpace;
+        padding: $contextSpace;
+        border-top: 1px solid $gray-lighter;
+        &>a {
+          display: block;
+          margin: -$contextSpace;
+          padding: 12px;
+          font-size: 20px;
+          text-align: center;
+          background-color: $gray-ultra;
+          color: $gray-dark;
+        }
+      }
+
+    }
+  }
+}
+// show it when select other
+.select-other {
+  display: none;
+}

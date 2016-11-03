@@ -1,0 +1,11 @@
+.s-bg-cov, .s-bg-con {
+  background: no-repeat center;
+  -ms-behavior: url(../assets/css/backgroundsize.min.htc);
+  behavior: url(../assets/css/backgroundsize.min.htc);
+}
+.s-bg-cov {
+  background-size: cover;
+}
+.s-bg-con {
+  background-size: contain;
+}

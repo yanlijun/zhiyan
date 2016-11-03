@@ -1,0 +1,132 @@
+.m-sec {
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+  &-tt {
+    position: relative;
+    z-index: 9;
+    margin: 40px 0;
+    text-align: center;
+    h2 {
+      position: relative;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      font-size: 30px;
+      color: $gray-dark;
+
+      &:after {
+        position: absolute;
+        bottom:0;
+        left: 50%;
+        width:80px;
+        height: 2px;
+        margin-left: -40px;
+        content: " ";
+        background-color: $gray-lighter;
+      }
+      span {
+        color: $brand-danger;
+      }
+    }
+    p {
+      font-size: 15px;
+      color: $gray-light;
+    }
+  }
+  @media (min-width: 768px) {
+    &-tt {
+      margin: 60px 0;
+      h2 {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        font-size: 44px;
+      }
+      p {
+        font-size: 17px;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  &-sr { // screen
+    &,
+    .item {
+      position: absolute;
+    }
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  //.m-lst {
+  //  padding-top: 34px;
+  //  padding-right: $gridSpace;
+  //  padding-left: $gridSpace;
+  //
+  //  .item {
+  //    &-vi {
+  //      border-radius: 50%;
+  //    }
+  //
+  //    &:hover {
+  //      .u-h4 {
+  //        color: $red;
+  //      }
+  //    }
+  //  }
+  //
+  //  &.m-sec-lst1 {
+  //    .item {
+  //      @include flex(0 0 28%);
+  //      padding: $contextSpace * 2;
+  //      overflow: visible;
+  //
+  //      &-vi {
+  //        width: 68px;
+  //        height: 68px;
+  //        margin-top: -34px - $contextSpace * 2;
+  //        margin-left: auto;
+  //        margin-right: auto;
+  //        background-color: $black;
+  //      }
+  //      .u-h4 {
+  //        margin-top: $contextSpace * 2;
+  //      }
+  //
+  //      &:hover {
+  //        .item-vi,
+  //        .m-sec-hr {
+  //          background-color: $red;
+  //        }
+  //      }
+  //    }
+  //  }
+  //
+  //  &.m-sec-lst2 {
+  //    .item {
+  //      @include flex(0 0 46%);
+  //      margin: $contextSpace * 2 0;
+  //
+  //      &-vi {
+  //        width: 78px;
+  //        height: 78px;
+  //        border: 2px solid $white;
+  //        background-color: $white;
+  //      }
+  //
+  //      &:hover {
+  //        .item-vi {
+  //          border-color: $red;
+  //          background-color: transparent;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+
+}
+
